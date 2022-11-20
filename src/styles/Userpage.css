@@ -1,0 +1,197 @@
+#mainUI
+{
+    display: grid;
+    /*original grid design for later */
+    /* grid-template-columns: 1fr 6fr; */
+    /* height: 100vh; */
+
+    /* for grid area put menu back for original design intent */
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "content";
+    
+}
+
+#userPanel
+{
+    display: none;
+    background-color: #C8C8C8;
+    width: 100%;
+    height: 93.8vh;
+    grid-area: menu;
+    color: darkgrey;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+#userDisplay
+{
+    /* background-color: blue; */
+    background: linear-gradient(to bottom,#4F3D99 40% ,#2B2929 65%);
+    /* Original value for gradient */
+    /* background: linear-gradient(to bottom,#4F3D99 40% ,#2B2929 70%); */
+    width: 100%;
+    height: 100%;
+    grid-area: content;
+    color: darkgrey;
+    font-size: 30px;
+
+}
+
+#mainDisplay
+{
+    /* Original settings */
+    /* background-color: burlywood; */
+    /*original display height for design later */
+    /* height: 540px; */
+    /* padding-left: 20px; */
+    /*------------------------------*/
+    
+    width: 100%;
+    padding-left: 90px;
+    overflow-y:scroll ;
+    height: 100vh;
+    grid-area: content;
+    position: relative;
+        
+    
+}
+
+#textDisplay
+{
+    background-color: black;
+    width: 100%;
+    height: 44.3vh;
+    color: blanchedalmond;
+    grid-area: menu;
+    position: relative;
+    display: none;
+    
+
+}
+
+.logo
+{
+    display: none;
+    background-color: darkcyan;
+    width: 100%;
+    height: 60px;
+    grid-area: menu;
+    color: blanchedalmond;
+    position: relative;
+
+}
+
+.cardExtension
+{
+    width: 10em;
+    display: inline-flex;
+    justify-items: center;
+    height: 15em;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+.cardExtension2
+{
+    margin-top: 20px;
+}
+
+.cardExtension3
+{   text-align: center;
+    /* margin-top: 30px; */
+}
+
+.cardImage
+{
+    /* width: 260px; */
+    /* height: 150px; */
+    width: 8.7em;
+    height: 5em;
+}
+
+#searchBar
+{
+    /*---- settings for final version---- */
+    /* padding-left: 26px; */
+    /* padding-bottom: 8px; */
+    /* margin: 10px 0px ; */
+    /*------------------------------------ */
+    width: 1400px;
+    height: 37px;
+    margin-top: 10px; 
+    margin-left:90px ;
+    padding-left: 26px;
+    padding-bottom: 8px;
+    border-radius: 85px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    background-color: darkgrey;
+    
+}
+
+#searchBar::placeholder
+{
+    color: #4F3D99;
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: right;
+    padding-left: 203px;
+    
+}
+
+#searchBar:focus
+{
+    outline-style: none;
+    outline-color: none;
+    border-style: solid;
+    border-color: #f0c248;
+}
+
+#searchButton
+{
+    /* Original settings */
+
+    /*--------------------*/
+    width: 5em;
+    height: 2.3em;
+    display: inline;
+    position: relative;
+    margin-left: 10px;
+    outline-style: none;
+    outline-color: none;
+}
+
+#bigspin
+{
+    height: 75px;
+    width: 2.5em;
+    position: relative;
+    top: 45%;
+    left: 60%;
+    margin: -50px 0 0 -50px;
+}
+
+h6{
+    display: inline;
+    margin-right: 5px;
+}
+
+#score{
+    text-align: center;
+}
+
+#buttonBox{
+    text-align: center;
+}
+
+#nextPage{
+    width: 15%;
+    margin-left: 1%;
+}
+
+#prevPage{
+    width: 15%;
+    margin-right: 1%;
+}
