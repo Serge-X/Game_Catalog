@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Game_Catalog/static/css/main.01ecb210.chunk.css",
+    "main.js": "/Game_Catalog/static/js/main.16d23d1b.chunk.js",
+    "main.js.map": "/Game_Catalog/static/js/main.16d23d1b.chunk.js.map",
+    "runtime-main.js": "/Game_Catalog/static/js/runtime-main.b31a7869.js",
+    "runtime-main.js.map": "/Game_Catalog/static/js/runtime-main.b31a7869.js.map",
+    "static/js/2.4977ecb2.chunk.js": "/Game_Catalog/static/js/2.4977ecb2.chunk.js",
+    "static/js/2.4977ecb2.chunk.js.map": "/Game_Catalog/static/js/2.4977ecb2.chunk.js.map",
+    "index.html": "/Game_Catalog/index.html",
+    "precache-manifest.fe0691cb2d5a814f25438cf6c3f8a269.js": "/Game_Catalog/precache-manifest.fe0691cb2d5a814f25438cf6c3f8a269.js",
+    "service-worker.js": "/Game_Catalog/service-worker.js",
+    "static/css/main.01ecb210.chunk.css.map": "/Game_Catalog/static/css/main.01ecb210.chunk.css.map",
+    "static/js/2.4977ecb2.chunk.js.LICENSE.txt": "/Game_Catalog/static/js/2.4977ecb2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b31a7869.js",
+    "static/js/2.4977ecb2.chunk.js",
+    "static/css/main.01ecb210.chunk.css",
+    "static/js/main.16d23d1b.chunk.js"
+  ]
+}
