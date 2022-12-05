@@ -16,6 +16,7 @@ function Userpage() {
     const [page, setPage]=useState(1)
     const [pageNextState,setNextState]=useState('')
     const [pagePrevState,setPrevState]=useState('')
+
     let number= 200;
 
     
@@ -25,26 +26,24 @@ function Userpage() {
         const res = await axios.get(`https://api.rawg.io/api/games?key=${process.env.REACT_APP_URL}&search=${searchValue}&page_size=${number}&page=${page}`
         );
         setData(res.data.results);
-        setNextState(res.data.next)
-        setPrevState(res.data.previous)
+        setNextState(res.data.next);
+        setPrevState(res.data.previous);
         setLoading(false);
     }
 
     const nextPage= ()=>{
-            if(pageNextState===null){return}
-            setPage(page + 1)}
+            if(pageNextState===null){return};
+            setPage(page + 1)};
 
     const prevPage= ()=>{
-            if(pagePrevState===null){return}
-            setPage(page - 1)}
+            if(pagePrevState===null){return};
+            setPage(page - 1)};
 
     useEffect(()=>{ 
-        
         {
             loadSearch();
-            
         }
-       },[searchValue, page] );
+       },[searchValue, page]);
        
     return(
         <div id="mainUI">
@@ -52,14 +51,14 @@ function Userpage() {
             <div id="userPanel"> </div>
             <div id="userDisplay">
                 <div id="mainDisplay">
-                <Title/>
-                <Searchbar stateFunc={setSearch} firstboot={setBoot} />
-                <Cardsystem pass={data} loading={loading} page={page} />
-                <div id='buttonBox'>
-                    <Button id='prevPage' onClick={prevPage}>Prev page</Button>
-                    {page}
-                    <Button id='nextPage' onClick={nextPage}>Next page</Button>
-                </div> 
+                    <Title/>
+                    <Searchbar stateFunc={setSearch} firstboot={setBoot} />
+                    <Cardsystem pass={data} loading={loading} page={page} />
+                    <div id='buttonBox'>
+                        <Button id='prevPage' onClick={prevPage}>Prev page</Button>
+                        {page}
+                        <Button id='nextPage' onClick={nextPage}>Next page</Button>
+                    </div> 
                 </div>
                 <div id="textDisplay">
                     <h1>Hello my pretty games</h1>

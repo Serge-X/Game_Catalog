@@ -14,15 +14,15 @@ function Searchbar({stateFunc, firstboot}){
         firstboot(false);
         stateFunc(text);
         const data = [firstboot, stateFunc];
-        return data.map(function(a){return a;});
+        return data.map(function(a){return a});
     }
 
     return(
         <div>
-        <form onSubmit={useSearchValue}>
-        <input type= "search" id="searchBar" placeholder="enter game title" value={text} onChange={searchInput} />
-        <Button id="searchButton" variant="outline-secondary" onClick={useSearchValue}> Search</Button>
-        </form> 
+            <form onSubmit={useSearchValue}>
+            <input type= "search" id="searchBar" placeholder="enter game title" value={text} onChange={searchInput} />
+            <Button id="searchButton" variant="outline-secondary" onClick={useSearchValue}> Search</Button>
+            </form> 
         </div>
     )
 }
